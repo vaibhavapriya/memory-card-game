@@ -9,16 +9,25 @@ body{
     width: 100vw;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
+    background-image: url(images/bg4.jpg); 
     font-family: Verdana, sans-serif;
-    color: rgb(145, 45, 227); 
-     height: 100vh; 
+    /* color:rgba(193,232,213,255);  */
+    /* color:rgba(254,234,227,255); */
+    color:rgba(254,70,118,255);
+    /* color:rgba(255,181,180,255);  */
+    height: 100vh; 
     align-items: center;
     justify-content: center;
 }
+
+h1{
+    font-size: 30px;
+    color: rgb(145, 45, 227); 
+} 
 .title-container{
     padding: 30px;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 .cards-container{
@@ -42,15 +51,23 @@ body{
 img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 button{
     background-color: rgb(255, 255, 255);
     font-family: Verdana, sans-serif;
-    color: rgb(145, 45, 227); 
+    /* color: rgb(145, 45, 227); 
+    color: rgba(254,70,118,255); */
+    color: rgba(251,75,148,255);
     font-size: large;
     font-weight: bold;
     border: 0cap;
+}
+button:hover{
+    background-color:rgba(251,75,148,255) ;
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
 }
 .card{
     justify-items: center;
@@ -61,16 +78,15 @@ button{
 }
 .card-back{
     position: absolute;
-    border-radius: 10px;
+    border-radius: 50%;
     top: 0;
     left: 0;
-    border-radius: 50%;
 }
 
-.card-image{
+.card-front{
     transform: rotateY(90deg); 
     transition: all ease-in 0.25s;
-    mix-blend-mode: multiply;
+    border-radius: 20%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -82,9 +98,13 @@ button{
         grid-gap: 20px 10px;
         place-items: center;
     }
+    h1{
+        font-size: 40px;
+        color: rgb(145, 45, 227); 
+    } 
     
 }
-  @media only screen and (min-width: 1022px) {
+@media only screen and (min-width: 1022px) {
     .cards-container{
         padding: 10px;
         display: grid;
@@ -93,7 +113,19 @@ button{
         grid-gap: 20px 10px;
         place-items: center;
         justify-content: center;
-    }   
+    }  
+    h1{
+        font-size: 40px;
+        color: rgb(145, 45, 227); 
+    }  
+}
+@media only screen and (max-height:420px){
+    .title-container{
+        padding: 0px;
+    }
+    .opt-container{
+        padding: 0px;
+    }
 }
 /* js css */
 .toggled .card-front { 

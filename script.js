@@ -10,14 +10,14 @@ let movesDynamic = document.getElementById('move'); // movesDisplay
 let allImages = document.getElementsByClassName('card-front');
 
 const imagesLinkArray=[
-    { id:1,image:"images/pngegg (5).png",alt:5},
-    { id:2,image:"images/pngegg (10).png",alt:10},
-    { id:3,image:"images/pngegg (7).png",alt:7},
-    { id:4,image:"images/pngegg (6).png",alt:6},
-    { id:1,image:"images/pngegg (5).png",alt:5},
-    { id:2,image:"images/pngegg (10).png",alt:10},
-    { id:3,image:"images/pngegg (7).png",alt:7},
-    { id:4,image:"images/pngegg (6).png",alt:6}
+    { id:1,image:"images/c1.jpg",alt:5},
+    { id:2,image:"images/c2.jpg",alt:10},
+    { id:3,image:"images/c3.jpg",alt:7},
+    { id:4,image:"images/c4.jpg",alt:6},
+    { id:1,image:"images/c1.jpg",alt:5},
+    { id:2,image:"images/c2.jpg",alt:10},
+    { id:3,image:"images/c3.jpg",alt:7},
+    { id:4,image:"images/c4.jpg",alt:6}
     //{id:}
 ];
 
