@@ -9,16 +9,104 @@ body{
     width: 100vw;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    color: black;
-    font-family:Open sans;
-    /* height: 100vh; */
+    font-family: Verdana, sans-serif;
+    color: rgb(145, 45, 227); 
+     height: 100vh; 
     align-items: center;
     justify-content: center;
 }
+.title-container{
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 .cards-container{
+    padding: 10px;
     display: grid;
-    grid-template-rows: 200px 200px ;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px ;
+    grid-template-columns: 60px 60px 60px 60px;
     grid-gap: 20px 10px;
     place-items: center;
+    justify-content: center;
+}
+.opt-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: bold;
+
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, sans-serif;
+    color: rgb(145, 45, 227); 
+    font-size: large;
+    font-weight: bold;
+    border: 0cap;
+}
+.card{
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.card-back{
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.card-image{
+    transform: rotateY(90deg); 
+    transition: all ease-in 0.25s;
+    mix-blend-mode: multiply;
+}
+
+@media only screen and (min-width: 600px) {
+    .cards-container{       
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 150px 150px ;
+        grid-template-columns: 150px 150px 150px 150px ;
+        grid-gap: 20px 10px;
+        place-items: center;
+    }
+    
+}
+  @media only screen and (min-width: 1022px) {
+    .cards-container{
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 200px 200px ;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-gap: 20px 10px;
+        place-items: center;
+        justify-content: center;
+    }   
+}
+/* js css */
+.toggled .card-front { 
+    transform: rotateY(0deg); 
+    transition-delay: 0.25s; 
+} 
+
+.item .card-back { 
+    transition: all ease-in 0.25s; 
+    transition-delay: 0.25s; 
+} 
+  
+.toggled .card-back { 
+    transform: rotateY(90deg); 
+    transition-delay: 0s; 
 }
