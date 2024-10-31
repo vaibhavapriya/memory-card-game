@@ -1,9 +1,9 @@
 let move = 0;
 let winCount = 0;
-let shuffledA= [];//toggledCardsArray
+let shuffledA= [];
 const restart = document.getElementById('restart');
 const cards = document.getElementsByClassName('card');
-let movesDynamic = document.getElementById('move'); // movesDisplay
+let movesDynamic = document.getElementById('move'); 
 let allImages = document.getElementsByClassName('card-front');
 
 const imagesLinkArray=[
